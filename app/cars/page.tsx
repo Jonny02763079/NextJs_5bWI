@@ -1,6 +1,7 @@
 import React from 'react'
 import CarCard from '../components/CarCard';
 import carType from '../services/carType';
+import CarCardList from '../components/CarCardList';
 
 export default function page() {
 
@@ -16,9 +17,7 @@ export default function page() {
     return (
         <div>
             <div>
-                {testCars.map((car) => (
-                    <CarCard car={car} key={car.name} />
-                ))}
+                <CarCardList cars={testCars}></CarCardList>
             </div>
         </div>
     )
