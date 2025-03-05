@@ -1,5 +1,5 @@
 import React from 'react'
-import type { carType } from '../services/carType'
+import type carType from '../services/carType'
 import TruckCard from './TruckCard';
 
 type Props = {

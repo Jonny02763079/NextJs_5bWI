@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import carType from '../services/carType'
 
 type props = {
@@ -6,6 +6,9 @@ type props = {
 }
 
 export default function truckCard({ truck }: props) {
+
+    const [isActive, setIsActive] = useState<boolean>(false)
+
     return (
         <div style={{ margin: '2em', borderStyle: 'solid', padding: '2em', backgroundColor: 'aliceblue' }}>
             <h1>{truck.name}</h1>
