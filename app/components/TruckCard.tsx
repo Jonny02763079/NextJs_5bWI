@@ -6,6 +6,7 @@ type props = {
     truck: carType
 }
 
+
 export default function TruckCard({ truck }: props) {
     const [isActive, setIsActive] = useState<boolean>(false)
 
